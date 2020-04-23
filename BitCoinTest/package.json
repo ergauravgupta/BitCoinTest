@@ -1,0 +1,35 @@
+{
+	"name": "BitCoinTest",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest",
+		"build-ios": "rm -rf ios/BitCoinTest/bundle/; mkdir ios/BitCoinTest/bundle; react-native bundle --reset-cache --platform ios --dev false --entry-file index.js  --bundle-output ios/BitCoinTest/bundle/main.jsbundle --assets-dest ios/BitCoinTest/bundle",
+		"build-android": "react-native bundle --reset-cache --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/"
+	},
+	"dependencies": {
+		"axios": "0.18.1",
+		"prop-types": "^15.7.2",
+		"react": "16.8.3",
+		"react-native": "0.59.10",
+		"react-native-gesture-handler": "*",
+		"react-native-keyboard-aware-scrollview": "^2.1.0",
+		"react-navigation": "3.8.1",
+		"react-navigation-helper": "^1.0.7",
+		"react-redux": "^7.1.3",
+		"redux": "^4.0.4",
+		"redux-thunk": "^2.3.0"
+	},
+	"devDependencies": {
+		"@babel/core": "7.9.0",
+		"@babel/runtime": "7.9.2",
+		"babel-jest": "25.4.0",
+		"jest": "25.4.0",
+		"metro-react-native-babel-preset": "0.59.0",
+		"react-test-renderer": "16.8.3"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}

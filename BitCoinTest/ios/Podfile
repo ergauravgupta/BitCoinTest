@@ -1,0 +1,35 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+APP_TARGET = 'BitCoinTest'
+PROJECT_PATH = '../node_modules/'
+
+target 'BitCoinTest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for BitCoinTest
+
+pod 'React', :path => PROJECT_PATH + 'react-native', :subspecs => [
+    'ART',
+    'Core',
+    'CxxBridge',
+    'RCTText',
+    'RCTNetwork',
+    'RCTLinkingIOS',
+    'RCTImage',
+    'RCTAnimation',
+    'RCTWebSocket', # needed for debugging
+    'RCTActionSheet',
+    'RCTGeolocation',
+    'RCTSettings',
+    'RCTVibration',
+    'DevSupport',
+    'RCTPushNotification'
+    ]
+     pod 'yoga', :path => PROJECT_PATH + 'react-native/ReactCommon/yoga'
+    pod 'DoubleConversion', :podspec => PROJECT_PATH + 'react-native/third-party-podspecs/DoubleConversion.podspec'
+    pod 'glog', :podspec => PROJECT_PATH + 'react-native/third-party-podspecs/GLog.podspec'
+    pod 'Folly', :podspec => PROJECT_PATH + 'react-native/third-party-podspecs/Folly.podspec'
+    pod 'RNGestureHandler', :path => PROJECT_PATH + 'react-native-gesture-handler'
+end
