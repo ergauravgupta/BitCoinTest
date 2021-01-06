@@ -9,7 +9,7 @@
 		"build-android": "react-native bundle --reset-cache --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/"
 	},
 	"dependencies": {
-		"axios": "0.18.1",
+		"axios": "0.21.1",
 		"prop-types": "^15.7.2",
 		"react": "16.8.3",
 		"react-native": "0.59.10",
